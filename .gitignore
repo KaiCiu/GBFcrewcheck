@@ -1,0 +1,22 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# GBF 登录状态与本地数据
+gbf_browser_profile/
+*.db
+*.sqlite
+*.sqlite3
+members.json
+
+# 密钥
+.env
+
+# PyCharm
+.idea/
+
+# 日志
+*.log
