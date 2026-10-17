@@ -79,13 +79,21 @@ def main():
             ]
 
             # 人员变动详情
+
+            # 人员变动详情
             for row in personnel_changes:
                 name = row["name"] or "未知成员"
+                member_id = row["member_id"]
+
+                if member_id:
+                    member_info = f"{name}（ID: {member_id}）"
+                else:
+                    member_info = name
 
                 if row["change_type"] == "joined":
-                    lines.append(f"{name} 加入骑空团")
+                    lines.append(f"{member_info} 加入骑空团")
                 else:
-                    lines.append(f"{name} 离开骑空团")
+                    lines.append(f"{member_info} 离开骑空团")
 
             # 等级变化详情
             for row in rank_changes:
