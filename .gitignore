@@ -1,22 +1,29 @@
 
-# Python
-__pycache__/
-*.py[cod]
+# Python 环境与缓存
 .venv/
 venv/
+__pycache__/
+*.py[cod]
 
-# GBF 登录状态与本地数据
-gbf_browser_profile/
+# 本地数据和数据库
+data/
 *.db
 *.sqlite
 *.sqlite3
-members.json
 
-# 密钥
+# 浏览器个人资料和登录状态
+gbf_browser_profile/
+
+# 环境变量与密钥
 .env
+.env.*
+!.env.example
 
-# PyCharm
+# PyCharm 本地配置
 .idea/
 
 # 日志
 *.log
+
+# 临时文件
+*.tmp
